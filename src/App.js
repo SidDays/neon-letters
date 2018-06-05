@@ -13,6 +13,7 @@ import {
     Jumbotron,
     Button
 } from 'reactstrap';
+import Footer from './components/Footer';
 
 class App extends Component {
     constructor(props) {
@@ -65,6 +66,7 @@ class App extends Component {
                         </Row>
                     </Container>
                 </Jumbotron>
+                <Footer />
             </div>
         );
     }
