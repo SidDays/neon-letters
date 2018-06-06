@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "reactstrap";
 
+import Post from './Post';
+
 class PostsOverview extends Component {
   
   getPosts() {
@@ -26,6 +28,9 @@ class PostsOverview extends Component {
 
 
         { this.getPosts() }
+
+
+        <Post />
 
       </Container>)
   }
