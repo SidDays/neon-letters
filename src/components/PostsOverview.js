@@ -21,13 +21,13 @@ class PostsOverview extends Component {
   
   render() {
     return (
-      <main>
+      <Container>
         PostsOverview PAGE WITH POSTS
 
 
         { this.getPosts() }
 
-      </main>)
+      </Container>)
   }
 }
 
