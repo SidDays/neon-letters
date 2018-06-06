@@ -22,7 +22,7 @@ class Footer extends Component {
 
           <Row>
             <Col>
-              <ul>
+              <ul className="list-unstyled">
                 <li><h4>Company</h4></li>
                 <li>About Tindie</li>
                 <li>Tindie Blog</li>
@@ -30,7 +30,7 @@ class Footer extends Component {
               </ul>
             </Col>
             <Col>
-              <ul>
+              <ul className="list-unstyled">
                 <li><h4>Discover</h4></li>
                 <li>Newest Products</li>
                 <li>Popular Products</li>
@@ -38,7 +38,7 @@ class Footer extends Component {
               </ul>
             </Col>
             <Col>
-              <ul>
+              <ul className="list-unstyled">
                 <li><h4>Buying & Selling</h4></li>
                 <li>Buy on Tindie</li>
                 <li>Sell on Tindie</li>
@@ -46,7 +46,7 @@ class Footer extends Component {
               </ul>
             </Col>
             <Col>
-              <ul>
+              <ul className="list-unstyled">
                 <li><h4>Help</h4></li>
                 <li>FAQs</li>
                 <li>Contact Tindie</li>
