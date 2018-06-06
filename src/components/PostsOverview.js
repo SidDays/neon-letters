@@ -25,6 +25,8 @@ class PostsOverview extends Component {
       })
   }
 
+
+
   render() {
     return (
       <Container>
@@ -32,9 +34,18 @@ class PostsOverview extends Component {
 
         <Row>
           <Col >
-            <Post />
-            <Post />
-            <Post />
+            {
+              this.state.posts.map((post, i) => 
+              <Post
+                author = {post.author}
+                date = {post.date}
+                title = {post.title.rendered}
+                contentHTML = {post.content.rendered}
+                excerptHTML = {post.excerpt.rendered}
+                categories = {post.categories}
+                tags = {post.tags}
+              />)
+            }
           </Col>
         </Row>
 
