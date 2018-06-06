@@ -12,7 +12,12 @@ import {
   Row,
   Col,
   Jumbotron,
-  Button
+  Button,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+
 } from 'reactstrap';
 
 class Header extends Component {
@@ -58,6 +63,7 @@ class Header extends Component {
             </Collapse>
           </Container>
         </Navbar>
+
         <Jumbotron>
           <Container>
             <Row>
@@ -67,6 +73,30 @@ class Header extends Component {
             </Row>
           </Container>
         </Jumbotron>
+
+        <Container>
+          <Form inline>
+            <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+              <Input type="select" name="select" id="exampleSelect" defaultValue="default">
+                <option value="default" disabled>Explore by category</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </Input>
+            </FormGroup>
+
+            <FormGroup>
+              <a href="#">Most Popular</a>
+              <a href="#">Recent</a>
+              </FormGroup>
+ 
+            <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+              <Input placeholder="Search the blog..." />
+            </FormGroup>
+            <Button>Search</Button>
+          </Form>
+        </Container>
       </header>
     )
   }
