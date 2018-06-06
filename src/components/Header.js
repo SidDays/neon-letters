@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import {
   Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
@@ -15,7 +14,6 @@ import {
   Button,
   Form,
   FormGroup,
-  Label,
   Input,
 
 } from 'reactstrap';
@@ -27,7 +25,7 @@ class Header extends Component {
         <Navbar color="inverse" light expand="md">
           <Container>
             <NavbarBrand href="/">tindie logo</NavbarBrand>
-            <Collapse isOpen="" navbar>
+            <Collapse isOpen={true} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
                   <NavLink>
@@ -87,8 +85,8 @@ class Header extends Component {
             </FormGroup>
 
             <FormGroup>
-              <a href="#">Most Popular</a>
-              <a href="#">Recent</a>
+              <a href="#mostpop">Most Popular</a>
+              <a href="#recent">Recent</a>
               </FormGroup>
  
             <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
